@@ -6213,3 +6213,22 @@ blockquote.pullquote.right {
   display: none;
   background: rgba(0,0,0,0.6);
 }
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  background-color: #000;
+}
+@media screen and (max-width: 767px) {
+  .bg-video {
+    display: none;
+  }
+  body {
+    background: url("/path/to/your/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
